@@ -1,0 +1,18 @@
+
+body{
+    margin: 35px;
+    background-color: rgb(216, 199, 179);
+}
+.titulo{
+    font-size: 60px;
+    color: rgb(0, 60, 255);
+}
+img{
+    width: 800px;
+}
+.desc_tienda{
+    background-color: bisque;
+}
+.footer{
+    background-color: rgb(155, 150, 145);
+}
