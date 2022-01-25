@@ -1,5 +1,6 @@
-
 document.getElementById("enviar").onclick =()=>{
+    var e = document.querySelector("ul");
+    e.innerHTML = "";
     let opcion = document.getElementById("opcion").value;
     let divImagenes = document.getElementById("imagenes");
     for (i=0; i<opcion; i++){
@@ -10,3 +11,4 @@ document.getElementById("enviar").onclick =()=>{
     console.log(opcion);
 
 }
+

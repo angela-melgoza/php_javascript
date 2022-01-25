@@ -1,3 +1,38 @@
 git [add|rm] [archivo]
 git commit -m "[número de commit]"
 git push -u origin master
+
+
+En visual Studio Code:
+-> cd mi_proyecto
+-> php artisan serve --port=1111
+
+En el navegador:
+-> localhost:1111/saludar
+
+
+** Se puede abrir otra terminal en VS Code,
+recomendacion: abrir GIT Bash porque PoweSell da muchos problemas.
+
+En la consola de Git Bash, para hacer nuevos controladores:
+-> php artisan make:controller HomeController
+
+
+Para generar la carpeta vendor si se borra o no estaba en el git:
+-> composer install
+
+
+Instalar Jetstream:
+-> composer require laravel/jetstream
+-> php artisan jetstream:install inertia
+-> npm install
+
+Luego de crear la base de datos:
+   En el archivo de .env editar la linea 14: DB_DATABASE=[nombre_base]
+
+En la consola de bash:
+-> php artisan migrate
+
+
+-> php artisan db:seed
+-> npm run watch
