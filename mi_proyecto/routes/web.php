@@ -20,3 +20,4 @@ Route::get('/', function () {
  */
 
  Route::get('product/{slug}/view',[ProductController::class,'view'])->name('product.view');
+ Route::get('products',[ProductController::class,'showAllProducts'])->name('products.show');

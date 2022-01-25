@@ -16,4 +16,14 @@ class ProductController extends Controller
             'product' => $product
         ]);
     }
+
+    public function showAllProducts(){
+        $data = Product::where('status',1)->get();
+        Inertia::setRootView('layouts.public');
+        return Inertia::render('Product/All',[
+            'data' => $data,
+            'mi_nombre' => 'Angela',
+        ]);
+    }
+
 }

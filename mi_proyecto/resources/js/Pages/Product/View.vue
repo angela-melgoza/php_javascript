@@ -4,7 +4,9 @@
         <br>
         <input type="text" v-model="product.picture_url" style="width:80%">
         <img :src="product.picture_url" alt="" srcset="">
-        {{nombre}}
+        <img :src="product.picture_one_url" alt="" srcset="">
+        <img :src="product.picture_two_url" alt="" srcset="">
+
     </app-public>
 </template>
 
