@@ -20,7 +20,7 @@ class DatabaseSeeder extends Seeder
             'slug'=> 'patito-de-hule',
             'picture_url'=> 'https://finde.latercera.com/wp-content/uploads/2021/10/Hecho-en-casa-pato-de-hule-ok.jpg',
             'description'=> 'Soy un patito de Hule coqueton',
-            'status'=> 1,
+            'status'=> 0,
         ]);
 
         Product::create([
