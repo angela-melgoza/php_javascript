@@ -26,4 +26,26 @@ class ProductController extends Controller
         ]);
     }
 
+    public function adminProducts(){
+        return 'Estas en admin';
+    }
+
+    public function showAdminProduct(){
+        Inertia::setRootView('layouts.public');
+        return Inertia::render('Admin/Products/View');
+    }
+
+    public function getData(Request $request){
+        $data = Product::where('status',1)->get();
+        return $data;
+    }
+
+    public function create(){
+        Inertia::setRootView('layouts.public');
+        return Inertia::render('Admin/Products/Create');
+    }
+
+    public function createDb(Request $request){
+        $producto = $request['product'];
+    }
 }
